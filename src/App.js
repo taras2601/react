@@ -43,7 +43,7 @@ class ToDoList extends React.Component {
     return (
       <div>
           <input type='text' onChange={this.handleChange} />
-          <button onClick = {this.addItem}>Save</button>
+          <input type='submit' onClick={this.addItem} value='Save' />
           <ul>{this.state.items.map((item) => <li key = {item.id}>{item.currentItem}</li>)}</ul>
       </div>
     );
